@@ -548,6 +548,25 @@ height: 45px;
     font-weight: 600;
 }
 
+.box-loading-bar h4{
+    padding-left: 450px;
+    margin-bottom: 10px;
+}
+
+.loading-bar{
+    width:688px;
+    overflow:hidden;
+    height:16px;
+    background: #E8EAED;
+    border-radius: 4px;
+}
+
+
+.progress{
+    height:16px;
+    background: #FF9A02;
+    border-radius: 4px;
+}
 
 
 .box-status-account h5{
@@ -558,7 +577,7 @@ height: 45px;
 }
 
 .box-summ-min-max{
-    width: 688px;
+    
     display: flex;
     justify-content: space-between;
     width: 688px;

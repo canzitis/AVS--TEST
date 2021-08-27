@@ -19,7 +19,7 @@ body{
 }
 
 .header{
-    width: 100%;
+    width: 1387px;
     height: 200px;
 }
 
@@ -44,12 +44,9 @@ body{
     justify-content: center;
     align-items: center;
     padding: 0px;
-    
-    position: absolute;
+  
     width: 405px;
     height: 36px;
-    left: 256px;
-    top: 16px;
 }
 
 .nav-box-1 img, .nav-box-2 img{
@@ -138,11 +135,9 @@ border-radius: 4px;
 }
 
 .header-box-2{
-    position: absolute;
-    width: 600px;
-    height: 36px;
-    left: 777px;
-    top: 16px;
+    display: flex;
+    justify-content: space-between;
+    grid-area: h;
 }
 
 .box-3{
@@ -160,13 +155,13 @@ border-radius: 4px;
 }
 
 .box-3 img{
-    position: static;
+    
     width: 20px;
     height: 20px;
 }
 
 .box-3 a{
-    position: static;
+   
 width: 132px;
 height: 20px;
 
@@ -183,20 +178,20 @@ flex-direction: row;
 align-items: center;
 padding: 8px 16px;
 
-position: static;
+
 
 background: #FFFFFF;
 border-radius: 4px;
 }
 
 .box-4 img{
-    position: static;
+    
 width: 20px;
 height: 20px;
 }
 
 .box-4 a{
-    position: static;
+
 width: 46px;
 height: 20px;
 
@@ -214,20 +209,20 @@ flex-direction: row;
 align-items: center;
 padding: 8px 16px;
 
-position: static;
+
 
 background: #FFFFFF;
 border-radius: 4px;
 }
 
 .box-5 img{
-    position: static;
+
 width: 20px;
 height: 20px;
 }
 
 .box-5 a{
-    position: static;
+
     width: 168px;
     height: 20px;
     
@@ -244,19 +239,15 @@ height: 20px;
     flex-direction: row;   
 
     padding: 5px;
-    position: absolute;
     
     width: 180px;
     height: 20px;
-    left: 1483px;
-    top: 20px;
 
     background: #E8EAED;
     border-radius: 4px;
 }
 
 .nav-box-3 img{
-    position: static;
 width: 20px;
 height: 20px;
 left: 16px;
@@ -269,7 +260,7 @@ margin: 0px 8px;
 }
 
 .nav-box-3 a{
-    position: static;
+
     width: 121px;
     height: 20px;
     left: 44px;
@@ -287,20 +278,30 @@ margin: 0px 8px;
     margin: 0px 8px;
 }
 
+.box-grid{
+    width: 1400px;
+    height: 36px;
+    display: grid;
+    grid-template-areas: 
+    'i  h'
+    'i  c';
+    grid-gap: 10px;
+    grid-template-columns: 86px 1fr
+}
+
+.logo-company{
+    width: 86px;
+    height: 100px;
+    grid-area: i;
+}
+
 .logo-company img{
     width: 86px;
     height: 100px;
-
-
-    position: absolute;
-    left: 270px;
-    top: 125px;
 }
 
 .catalog-img{
-position: absolute;
-right: 850px;
-top: 110px;
+
 }
 
 .catalog-img img{
@@ -308,7 +309,6 @@ height: 44px;
 }
 
 .search{
-    position: absolute;
     width: 814px;
     height: 45px;
     right: 20px;
@@ -320,7 +320,6 @@ height: 44px;
 }
 
 .search-btn{
-    position: absolute;
     width: 45px;
     height: 44px;
     left: 534px;
@@ -335,12 +334,9 @@ height: 44px;
 .box-goods{
     display: flex;
     justify-content: center;
-
-    position: absolute;
+ 
     width: 277px;
     height: 60px;
-    left: 640px;
-    top: 100px;
 }
 
 .box-goods h4{
@@ -386,14 +382,12 @@ height: 44px;
  }
 
  .box-connection{
-     position: absolute;
-     top: 210px;
-     left: 385px;
      width: 1297px;
      height: 20px;
     
      display: flex;
      justify-content: space-between;
+     grid-area: c;
  }
 
  .box-connection a{
@@ -802,8 +796,10 @@ height: 44px;
     margin-top: 1488px;
 
     position: absolute;
-    width: 100%;
+    width: 1387px;
     height: 542px;
+
+    padding: 64px 256px 45px 256px;
 
     background: #F2F4F7;
 }
@@ -811,7 +807,6 @@ height: 44px;
 .box-footer-info{
     display: flex;
     justify-content: space-between  ;
-    padding: 64px 256px 45px 256px;
 }
 
 .box-footer-info-item{
@@ -895,11 +890,9 @@ height: 44px;
 }
 
 .button-subscribe{
-    position: absolute;
+   
     width: 132px;
     height: 39px;
-    left: 1532px;
-    top: 138px;
 
     background: #F2042C;
     color: white;
@@ -914,4 +907,62 @@ height: 44px;
 
 .button-subscribe:hover{
     cursor: pointer;
+}
+
+.box-social-networks{   
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 13.33%;
+    right: 13.33%;
+    top: 70.85%;
+    bottom: 22.14%;
+}
+
+.social-networks-items a{
+    margin: 3px;
+}
+
+.social-company-items{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+
+    width: 615px;
+    height: 38px;
+}
+
+.social-company-items a{
+    margin: 3px;
+}
+
+.box-copyright{
+    width: 1387px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 86.72%;
+}
+
+.box-copyright a{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    
+    text-decoration-line: underline;
+    
+    color: #2B2A29;
+}
+
+.box-copyright h3{
+    margin: 0;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+
+    color: #2B2A29;
+}
+
+.box-bank a{
+   margin: 5px; 
 }

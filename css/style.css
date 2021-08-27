@@ -1,4 +1,4 @@
-    body{
+body{
     position: relative;
     margin: 0;
 
@@ -6,7 +6,8 @@
     font-style: normal;
     background: #FFFFFF;
     font-size: 14px;
-    }
+}
+
 .site{
     padding: 16px 256px 24px 256px;
     display: grid;
@@ -18,8 +19,8 @@
 }
 
 .header{
-  width: 100%;
-  height: 200px;
+    width: 100%;
+    height: 200px;
 }
 
 .header a {
@@ -57,17 +58,16 @@
 
 .box-1{
     display: flex;
-flex-direction: row;
-align-items: center;
-padding: 8px 16px;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
 
-position: static;
-width: 124px;
-height: 36px;
+    position: static;
+    width: 124px;
+    height: 36px;
 
-background: #FFFFFF;
-border-radius: 4px;
-
+    background: #FFFFFF;
+    border-radius: 4px;
 }
 
 .box-1 img{
@@ -287,35 +287,13 @@ margin: 0px 8px;
     margin: 0px 8px;
 }
 
-
-
-
-.sidebar{
-    padding: 10px;
-    border: solid black 1px;
-    grid-area:  sidebar;
-}
-
-.content{
-    padding: 10px;
-    border: solid black 1px;
-    grid-area: content;
-}
-
-
-.footer{
-    padding: 10px;
-    border: solid black 1px;
-    grid-area: footer;
-}
-
 .logo-company img{
     width: 86px;
     height: 100px;
 
 
     position: absolute;
-    left: 250px;
+    left: 270px;
     top: 125px;
 }
 
@@ -459,6 +437,296 @@ height: 44px;
     margin-left: 5px;
  }
 
- .header{
-     margin-bottom: 400px;
+
+ 
+.sidebar{
+    position: relative;
+    margin-top: 50px;
+    grid-area:  sidebar;
+}
+
+
+ .box-personal-account-text h4{
+    position: relative;
+    width: 216px;
+    height: 32px;
+    left: 10px;
+    top: 0px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
  }
+
+
+ .item-personal-account-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    
+    position: absolute;
+    width: 268px;
+    height: 10px;
+    left: 10px;
+    top: 80px;
+ }
+  .item-personal-account-text a{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #999999;
+    margin-right: 4px;
+ }
+
+ .box-nav-panel{
+    position: relative;
+    width: 328px;
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    top: 30px;
+    left: 20px;
+
+ }
+
+ .box-nav-panel a{
+     cursor: pointer;
+ }
+
+ .nav-panel-item{
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+  
+ }
+
+ .actic-link-personal-account{
+    background: #E8EAED;
+    border-radius: 4px;
+ }
+
+ .nav-panel-item img{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+ }
+
+ .nav-panel-item a{
+    margin: 0;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #2B2A29;
+ }
+
+ .bell-count{
+    width: 20px;
+    height: 20px;
+
+    position: relative;
+
+    font-size: 12px;
+
+    text-align: center;
+    left: 5px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+ }
+
+
+ .content{
+    position: relative;
+    top: 180px;
+    left: 20px;
+    grid-area: content;
+}
+
+.box-status-account h4{
+    margin: 0;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.status-box{
+    width: 500px;
+    height: 30px;
+    display: flex;
+}
+
+.status{
+    padding: 5px;
+    
+    position: absolute;
+    width: 86px;
+    height: 20px;
+    left: 200px;
+    top: 0px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+
+    font-weight: 600;
+}
+
+
+
+.box-status-account h5{
+    margin-top: 5px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+
+.footer{
+    position:relative;
+    top: 2060px;
+    padding: 10px;
+    border: solid black 1px;
+    grid-area: footer;
+}
+
+.personal-data{
+    display: grid;
+    grid-template-areas: 'input input'
+    'input input'
+    'input input';
+    grid-gap: 10px;
+    grid-template-columns: 328px;
+}
+
+.personal-data input{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.personal-data-input{
+    width: 330px;
+    height: 50px;
+    border: 1px solid #404040;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.personal-data-button{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.save-button{
+    width: 117px;
+    height: 50px;
+
+    background: #F2042C;
+    border-radius: 4px;
+    border:none;
+    margin-right: 30px;
+
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+}
+
+.reset-button{
+    width: 117px;
+    height: 50px;
+
+    background: #E8EAED;
+    border-radius: 4px;
+
+    font-weight: 600;
+    font-size: 14px;
+    border:none;
+}
+
+.save-button:hover, .reset-button:hover{
+    cursor: pointer;
+}
+
+.box-account-business{
+    position: absolute;
+    width: 688px;
+    height: 216px;
+    top: 450px;
+
+    background: #F2F4F7;
+    border-radius: 4px;
+}
+
+.account-business-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    margin: 24px;
+    width: 300px;
+    height: 32px;
+    
+}
+
+.account-business-title img{
+    width: 32px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.account-business-title h4{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #2B2A29;
+}
+
+.box-account-business p{
+    width: 640px;
+    height: 40px;
+    
+    margin: 24px;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #2B2A29;
+}
+
+.added-company-button{
+
+    position: absolute;
+    width: 188px;
+    height: 48px;
+    left: 20px;
+    top: 150px;
+
+    background: #F2042C;
+    border-radius: 4px;
+    border:none;
+
+    font-weight: 600;
+    font-size: 14px;
+
+    color: #FFFFFF;
+}
+
+.added-company-button:hover{
+    cursor: pointer;
+}

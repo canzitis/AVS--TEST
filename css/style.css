@@ -821,7 +821,7 @@ height: 44px;
 }
 
 .box-footer-info-item img{
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .box-footer-info-item a{
@@ -850,39 +850,68 @@ height: 44px;
 
 .box-footer-info h4, p{
     margin:0;
+    margin-bottom: 10px;
 }
 
 .p-subscribe{
     width: 360px;
     height: 45px;
+
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+
+    letter-spacing: 0.03em;
+
+    color: #999999;
+}
+
+.p-subscribe a{
+    font-size: 12px;
+    color: #999999;
+    text-decoration: underline;
 }
 
 
-.input-subscribe{
-
+.input-subscribe{   
     width: 360px;
     height: 40px;
-    left: 1304px;
-    top: 300px;
 
+    margin: 10px 0 20px 0;
 
     background: #FFFFFF;
 
     border: 1px solid #C8CACC;
     box-sizing: border-box;
     border-radius: 4px;
+ 
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #2B2A29;
+    outline:none
+    
 }
 
 .button-subscribe{
-    align-items: flex-end;
-    padding: 10px 20px;
-
     position: absolute;
     width: 132px;
-    height: 40px;
+    height: 39px;
     left: 1532px;
-    top: 140px;
+    top: 138px;
 
     background: #F2042C;
-    border-radius: 0px 4px 4px 0px;
+    color: white;
+    border: none;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.button-subscribe:hover{
+    cursor: pointer;
 }

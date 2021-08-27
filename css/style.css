@@ -23,10 +23,6 @@ body{
     height: 200px;
 }
 
-.header a {
-  text-decoration: none;
-}
-
 .header a:hover {
  cursor: pointer;
 }
@@ -59,7 +55,6 @@ body{
     align-items: center;
     padding: 8px 16px;
 
-    position: static;
     width: 124px;
     height: 36px;
 
@@ -68,13 +63,11 @@ body{
 }
 
 .box-1 img{
-    position: static;
     width: 20px;
     height: 20px;
 }
 
 .box-1 a{
-    position: static;
     width: 64px;
     height: 20px;
 
@@ -82,35 +75,32 @@ body{
     font-size: 14px;
     line-height: 20px;
 
-text-decoration-line: underline;
+    text-decoration-line: underline;
 
 
-color: #2B2A29;
+    color: #2B2A29;
 }
 
 
 .box-2{
     display: flex;
-flex-direction: row;
-align-items: center;
-padding: 8px 16px;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
 
-position: static;
-width: 249px;
-height: 36px;
+    width: 249px;
+    height: 36px;
 
-background: #FFFFFF;
-border-radius: 4px;
+    background: #FFFFFF;
+    border-radius: 4px;
 }
 
 .box-2 img{
-    position: static;
     width: 20px;
     height: 20px;
 }
 
 .box-2 a{
-    position: static;
     width: 161px;
     height: 20px;
     
@@ -127,11 +117,12 @@ border-radius: 4px;
     align-items: center;
     padding: 0px;
     
-    position: absolute;
     width: 600px;
     height: 36px;
-    left: 777px;
-    top: 16px;
+}
+
+.nav-box-2 a{
+    text-decoration: none;
 }
 
 .header-box-2{
@@ -140,15 +131,17 @@ border-radius: 4px;
     grid-area: h;
 }
 
+
+.search-block {
+    display: flex;
+    margin: 0 auto;
+}
+
 .box-3{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 8px 16px;
-
-    position: static;
-    left: 0px;
-    top: 0px;
 
     background: #FFFFFF;
     border-radius: 4px;
@@ -280,12 +273,14 @@ margin: 0px 8px;
 
 .box-grid{
     width: 1400px;
-    height: 36px;
+
+    margin-top: 32px;
+    
     display: grid;
     grid-template-areas: 
     'i  h'
     'i  c';
-    grid-gap: 10px;
+    grid-gap: 20px;
     grid-template-columns: 86px 1fr
 }
 
@@ -300,12 +295,8 @@ margin: 0px 8px;
     height: 100px;
 }
 
-.catalog-img{
-
-}
-
 .catalog-img img{
-height: 44px;
+height: 45px;
 }
 
 .search{
@@ -333,10 +324,6 @@ height: 44px;
 
 .box-goods{
     display: flex;
-    justify-content: center;
- 
-    width: 277px;
-    height: 60px;
 }
 
 .box-goods h4{
@@ -360,19 +347,14 @@ height: 44px;
      margin: 5px;
  } 
  
- .block-goods-1 img, .block-goods-2 img, .block-goods-3 img{
-     margin-top: 10px;
- }
-
  .count{
     height:20px;
     width: 20px;
-
     position: absolute;
-   
-    left: 245px;
+    right: 250px;
+    top: 70px;
     background-color: red;
-
+ 
     color: white;
     border-radius: 50%;
  }
@@ -380,6 +362,8 @@ height: 44px;
  .count h5{
      margin: 2px;
  }
+
+ 
 
  .box-connection{
      width: 1297px;
@@ -390,10 +374,14 @@ height: 44px;
      grid-area: c;
  }
 
- .box-connection a{
+ .blue-a{
     color: #005BFF;
-     text-decoration: underline;
+    text-decoration: underline;
  }
+ .blac-a{
+    color:black;
+    text-decoration: none;
+}
 
  .box-connection h5{
     font-weight: normal;
@@ -434,41 +422,29 @@ height: 44px;
 
  
 .sidebar{
-    position: relative;
-    margin-top: 50px;
+    margin-top: 40px;
     grid-area:  sidebar;
 }
 
 
  .box-personal-account-text h4{
-    position: relative;
+    margin: 0;
     width: 216px;
     height: 32px;
-    left: 10px;
-    top: 0px;
-    font-family: Open Sans;
-    font-style: normal;
     font-weight: bold;
     font-size: 24px;
  }
+
 
 
  .item-personal-account-text{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
-    
-    position: absolute;
-    width: 268px;
-    height: 10px;
-    left: 10px;
-    top: 80px;
+  
+    margin: 10px 0 10px 0;
  }
-  .item-personal-account-text a{
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
+  .link-personal-accoun{
     font-size: 12px;
     line-height: 20px;
     text-decoration: none;
@@ -476,15 +452,20 @@ height: 44px;
     margin-right: 4px;
  }
 
+ .activ-linc-personal-account{
+    font-size: 12px;
+    line-height: 20px;
+    text-decoration: none;
+    color:red;
+    margin-right: 4px;
+}
+
  .box-nav-panel{
-    position: relative;
     width: 328px;
     height: 36px;
     display: flex;
     flex-direction: column;
-    top: 30px;
-    left: 20px;
-
+    margin-top: 20px;
  }
 
  .box-nav-panel a{
@@ -525,13 +506,10 @@ height: 44px;
     width: 20px;
     height: 20px;
 
-    position: relative;
-
     font-weight: 900;
 
     font-size: 12px;
     text-align: center;
-    left: 5px;
     border-radius: 50%;
     background-color: red;
     color: white;
@@ -539,17 +517,12 @@ height: 44px;
 
 
  .content{
-    position: relative;
-    top: 180px;
-    left: 20px;
     grid-area: content;
-    margin-bottom: 134px;
+    margin-top: 120px;
 }
 
 .box-status-account h4{
     margin: 0;
-    font-family: Open Sans;
-    font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 28px;
@@ -564,11 +537,9 @@ height: 44px;
 .status{
     padding: 5px;
     
-    position: absolute;
     width: 86px;
     height: 20px;
-    left: 200px;
-    top: 0px;
+    margin-left: 10px;
     border-radius: 4px;
     text-align: center;
     background-color: blue;
@@ -581,11 +552,41 @@ height: 44px;
 
 .box-status-account h5{
     margin-top: 5px;
-    font-family: Open Sans;
-    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
+}
+
+.box-summ-min-max{
+    width: 688px;
+    display: flex;
+    justify-content: space-between;
+    width: 688px;
+}
+
+.circulation-of-money{
+    display: flex;
+}
+
+.circulation-of-money b{
+    margin: 3px;
+}
+
+.circulation-of-money h5{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #999999;
+    margin: 3px;
+}
+
+.personal-data-heading{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #2B2A29;
 }
 
 .personal-data{
@@ -593,7 +594,7 @@ height: 44px;
     grid-template-areas: 'input input'
     'input input'
     'input input';
-    grid-gap: 10px;
+    grid-gap: 32px;
     grid-template-columns: 328px;
 }
 
@@ -618,7 +619,7 @@ height: 44px;
 
 .save-button{
     width: 117px;
-    height: 50px;
+    height: 48px;
 
     background: #F2042C;
     border-radius: 4px;
@@ -632,7 +633,7 @@ height: 44px;
 
 .reset-button{
     width: 117px;
-    height: 50px;
+    height: 48px;
 
     background: #E8EAED;
     border-radius: 4px;
@@ -647,25 +648,21 @@ height: 44px;
 }
 
 .box-account-business{
-    position: absolute;
     width: 688px;
-    height: 216px;
-    top: 450px;
-
+    height: 170px;  
+    margin-top: 48px;
     background: #F2F4F7;
     border-radius: 4px;
+    padding: 24px;
 }
 
 .account-business-title{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
 
-    margin: 24px;
     width: 300px;
     height: 32px;
-    
 }
 
 .account-business-title img{
@@ -682,11 +679,11 @@ height: 44px;
     color: #2B2A29;
 }
 
+
 .box-account-business p{
     width: 640px;
     height: 40px;
-    
-    margin: 24px;
+    margin: 18px 0 24px 0;
 
     font-weight: normal;
     font-size: 14px;
@@ -696,13 +693,9 @@ height: 44px;
 }
 
 .added-company-button{
-
-    position: absolute;
     width: 188px;
     height: 48px;
-    left: 20px;
-    top: 150px;
-
+    
     background: #F2042C;
     border-radius: 4px;
     border:none;
@@ -718,10 +711,8 @@ height: 44px;
 }
 
 .box-pass-date{
-    position: absolute;
     width: 688px;
     height: 188px;
-    top: 700px;    
 }
 
 .box-pass-date h4{
@@ -793,11 +784,11 @@ height: 44px;
 
 .footer{
     grid-area: footer;
-    margin-top: 1488px;
 
-    position: absolute;
     width: 1387px;
-    height: 542px;
+    height: 400px;
+
+    margin-top: 120px;
 
     padding: 64px 256px 45px 256px;
 
@@ -912,11 +903,6 @@ height: 44px;
 .box-social-networks{   
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    left: 13.33%;
-    right: 13.33%;
-    top: 70.85%;
-    bottom: 22.14%;
 }
 
 .social-networks-items a{
@@ -937,11 +923,10 @@ height: 44px;
 }
 
 .box-copyright{
+    margin-top:48px;
     width: 1387px;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    top: 86.72%;
 }
 
 .box-copyright a{

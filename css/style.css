@@ -533,8 +533,9 @@ height: 44px;
 
     position: relative;
 
-    font-size: 12px;
+    font-weight: 900;
 
+    font-size: 12px;
     text-align: center;
     left: 5px;
     border-radius: 50%;
@@ -548,6 +549,7 @@ height: 44px;
     top: 180px;
     left: 20px;
     grid-area: content;
+    margin-bottom: 134px;
 }
 
 .box-status-account h4{
@@ -590,16 +592,6 @@ height: 44px;
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
-}
-
-
-
-.footer{
-    position:relative;
-    top: 2060px;
-    padding: 10px;
-    border: solid black 1px;
-    grid-area: footer;
 }
 
 .personal-data{
@@ -729,4 +721,89 @@ height: 44px;
 
 .added-company-button:hover{
     cursor: pointer;
+}
+
+.box-pass-date{
+    position: absolute;
+    width: 688px;
+    height: 188px;
+    top: 700px;    
+}
+
+.box-pass-date h4{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #2B2A29;  
+}
+
+.pass-date-input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pass-date-input input{
+    width: 328px;
+    height: 48px;
+    
+    border: 1px solid #404040;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.box-button-pass{
+    width: 260px;
+
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-save-pass{
+    width: 117px;
+    height: 50px;
+    background: #F2042C;
+    border-radius: 4px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+}
+
+
+.button-reset-pass{
+    width: 117px;
+    height: 50px;
+    background: #E8EAED;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+}
+
+.box-button-pass button:hover{
+    cursor: pointer;
+}
+
+.pass-date-input input{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: center;
+    
+    color: #2B2A29;
+}
+
+
+.footer{
+    grid-area: footer;
+    margin-top: 1488px;
+
+    position: absolute;
+    width: 100%;
+    height: 542px;
+
+    background: #F2F4F7;
 }

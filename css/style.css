@@ -1029,6 +1029,7 @@ body{
     transform-origin: left top;
     pointer-events: none;
   }
+  
   input {
     font-size: 1rem;
     outline: none;

@@ -1,5 +1,6 @@
 body{
-    position: relative;
+    max-width: 1408px;
+   
     margin: 0;
 
     font-family: 'Open Sans', sans-serif;
@@ -155,63 +156,63 @@ body{
 
 .box-3 a{
    
-width: 132px;
-height: 20px;
+    width: 132px;
+    height: 20px;
 
-font-weight: 600;
-font-size: 14px;
-line-height: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
 
-color: #2B2A29;
+    color: #2B2A29;
 }
 
 .box-4{
     display: flex;
-flex-direction: row;
-align-items: center;
-padding: 8px 16px;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
 
 
 
-background: #FFFFFF;
-border-radius: 4px;
+    background: #FFFFFF;
+    border-radius: 4px;
 }
 
 .box-4 img{
     
-width: 20px;
-height: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 .box-4 a{
 
-width: 46px;
-height: 20px;
+    width: 46px;
+    height: 20px;
 
-font-weight: 600;
-font-size: 14px;
-line-height: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
 
-color: #2B2A29;
+    color: #2B2A29;
 
 }
 
 .box-5{
     display: flex;
-flex-direction: row;
-align-items: center;
-padding: 8px 16px;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
 
 
 
-background: #FFFFFF;
-border-radius: 4px;
+    background: #FFFFFF;
+    border-radius: 4px;
 }
 
 .box-5 img{
 
-width: 20px;
-height: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 .box-5 a{
@@ -241,15 +242,15 @@ height: 20px;
 }
 
 .nav-box-3 img{
-width: 20px;
-height: 20px;
-left: 16px;
-top: 8px;
+    width: 20px;
+    height: 20px;
+    left: 16px;
+    top: 8px;
 
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0px 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
 }
 
 .nav-box-3 a{
@@ -296,7 +297,7 @@ margin: 0px 8px;
 }
 
 .catalog-img img{
-height: 45px;
+    height: 45px;
 }
 
 .search{
@@ -337,6 +338,10 @@ height: 45px;
     margin: 0 auto;
 }
 
+.block-goods-3{
+    position: relative;
+}
+
 .block-goods-1, .block-goods-2, .block-goods-3{
     display: flex;
     flex-direction: column;
@@ -344,15 +349,16 @@ height: 45px;
  }
 
  .block-goods-1 h4, .block-goods-2 h4, .block-goods-3 h4{
-     margin: 5px;
+    margin: 5px;
  } 
  
  .count{
     height:20px;
     width: 20px;
     position: absolute;
-    right: 250px;
-    top: 70px;
+    right: 0;
+
+    
     background-color: red;
  
     color: white;
@@ -360,24 +366,25 @@ height: 45px;
  }
 
  .count h5{
-     margin: 2px;
+    margin: 2px;
  }
 
  
 
  .box-connection{
-     width: 1297px;
-     height: 20px;
+    width: 1297px;
+    height: 20px;
     
-     display: flex;
-     justify-content: space-between;
-     grid-area: c;
+    display: flex;
+    justify-content: space-between;
+    grid-area: c;
  }
 
  .blue-a{
     color: #005BFF;
     text-decoration: underline;
  }
+
  .blac-a{
     color:black;
     text-decoration: none;
@@ -418,8 +425,6 @@ height: 45px;
     line-height: 20px;
     margin-left: 5px;
  }
-
-
  
 .sidebar{
     margin-top: 40px;
@@ -743,6 +748,7 @@ height: 45px;
 
 .pass-date-input{
     display: flex;
+   
     justify-content: space-between;
 }
 
@@ -803,20 +809,23 @@ height: 45px;
 
 .footer{
     grid-area: footer;
-
-    width: 1387px;
+   
+    width: 100%;
     height: 400px;
 
-    margin-top: 120px;
+    margin: 0;
 
-    padding: 64px 256px 45px 256px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+
+    padding: 64px 245px  20px 245px;
 
     background: #F2F4F7;
 }
 
 .box-footer-info{
     display: flex;
-    justify-content: space-between  ;
+    justify-content: space-between ;
 }
 
 .box-footer-info-item{
@@ -970,3 +979,51 @@ height: 45px;
 .box-bank a{
    margin: 5px; 
 }
+
+
+
+/***********************TEST***********************/
+
+
+.container {
+
+    height: 100%;
+  }
+  
+  .material-textfield {
+    position: relative;  
+  }
+  
+  label {
+    position: absolute;
+    font-size: 1rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    font-size: 13px;
+    color: #999999;
+    padding: 0 0.3rem;
+    margin: 0 0.5rem;
+    transition: .1s ease-out;
+    transform-origin: left top;
+    pointer-events: none;
+  }
+  input {
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;  
+    padding: 1rem 0.7rem;
+    color: gray;
+    transition: 0.1s ease-out;
+  }
+
+  input:focus + label {
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+  }
+  input:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+  }

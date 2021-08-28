@@ -1,8 +1,5 @@
 body{
-    max-width: 1408px;
    
-    margin: 0;
-
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     background: #FFFFFF;
@@ -10,7 +7,11 @@ body{
 }
 
 .site{
-    padding: 16px 256px 24px 256px;
+    max-width: 1408px;
+   
+    margin: 0 auto;
+
+    padding-top:24px;
     display: grid;
     grid-template-areas: 'header header'
     'sidebar content'
@@ -810,17 +811,24 @@ body{
 .footer{
     grid-area: footer;
    
-    width: 100%;
-    height: 400px;
+    max-width: 100%;
+    height: 542px
 
     margin: 0;
 
     margin-top: 120px;
     margin-bottom: 30px;
 
-    padding: 64px 245px  20px 245px;
+    
 
     background: #F2F4F7;
+}
+
+.box-footer{
+    max-width: 1408px;
+    max-height: 542px;
+    margin: 0 auto;
+    padding: 64px 0 50px 0;
 }
 
 .box-footer-info{
@@ -952,7 +960,7 @@ body{
 
 .box-copyright{
     margin-top:48px;
-    width: 1387px;
+    max-width: 1387px;
     display: flex;
     justify-content: space-between;
 }
@@ -979,7 +987,6 @@ body{
 .box-bank a{
    margin: 5px; 
 }
-
 
 
 /***********************TEST***********************/

@@ -117,7 +117,7 @@ resetPassButton[0].addEventListener('click', function () {
     passLoginRepeat.className = "pass-login-repeat"
 
 
-    for (let i = 0; i < labelInpyt.length; i++) {
+    for (let i = 0; i < labelPass.length; i++) {
         labelPass[i].style.color = "#999999"
         errorTextPass[i].style.display = 'none'
     }

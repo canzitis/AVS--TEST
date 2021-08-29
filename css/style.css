@@ -301,12 +301,12 @@ body{
 }
 
 .search-input{
-    width: 766px;
-    height: 40px;
+    width: 751px;
+    height: 38px;
     border: 1px solid #C8CACC;
     border-right: none;
 
-    padding: 0;
+    padding-left: 15px;
   
     border-radius: 5px 0 0 5px;
     outline: none;
@@ -636,6 +636,7 @@ body{
 .personal-data-input{
     width: 330px;
     height: 50px;
+    padding: 15px;
     border: 1px solid #404040;
     box-sizing: border-box;
     border-radius: 4px;
@@ -648,6 +649,17 @@ body{
     box-sizing: border-box;
     border-radius: 4px;
 }
+
+.error-text, .error-text-pass{
+    display: none;
+    font-size: 10px;
+   
+    margin: 0;
+    margin-left: 20px;
+    color: red;
+}
+
+
 
 .personal-data-button{
     display: flex;
@@ -765,14 +777,6 @@ body{
     justify-content: space-between;
 }
 
-.pass-date-input input{
-    width: 328px;
-    height: 48px;
-    
-    border: 1px solid #404040;
-    box-sizing: border-box;
-    border-radius: 4px;
-}
 
 .box-button-pass{
     width: 260px;
@@ -793,32 +797,29 @@ body{
     color: white;
 }
 
-
 .button-reset-pass{
     width: 117px;
     height: 50px;
     background: #E8EAED;
     border-radius: 4px;
+    border: none;
     font-weight: 600;
     font-size: 14px;
-    border: none;
+    color: black
+}
+
+
+.pass-login, .pass-login-repeat {
+    width: 330px;
+    padding: 15px;
+    border: 1px solid #404040;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
 .box-button-pass button:hover{
     cursor: pointer;
 }
-
-.pass-date-input input{
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-
-    display: flex;
-    align-items: center;
-    
-    color: #2B2A29;
-}
-
 
 .footer{
     grid-area: footer;
@@ -909,10 +910,10 @@ body{
 }
 
 .input-subscribe{   
-    width: 288px;
+    width: 273px;
     height: 38px;
 
-    padding: 0;
+    padding-left: 15px;
 
     background: #FFFFFF;
 
@@ -1007,16 +1008,19 @@ body{
 
 .container {
 
-    height: 100%;
+    height: 50px;
   }
   
   .material-textfield {
     position: relative;  
   }
   
+  .material-textfield input {
+    height: 50px;
+  }
+  
   label {
     position: absolute;
-    font-size: 1rem;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -1035,7 +1039,6 @@ body{
     outline: none;
     border: 1px solid gray;
     border-radius: 5px;  
-    padding: 1rem 0.7rem;
     color: gray;
     transition: 0.1s ease-out;
   }

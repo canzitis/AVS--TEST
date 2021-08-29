@@ -80,7 +80,7 @@ savePassButton[0].addEventListener('click', function () {
     const indexLablPasseData = []
     const indexInputPassData = []
 
-    debugger
+
 
     for (let i = 0; i < labelPass.length; i++) {
         indexLablPasseData.push(i)

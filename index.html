@@ -10,6 +10,82 @@
 </head>
 
 <body>
+    <div class="header-mob">
+        <div class="main-container">
+            <div class="header-mob__wrapper">
+                <div class="header-mob__logo">
+                    <img src="./img/logo-mob.svg" alt="logo">
+                </div>
+
+                <div class="header-mob__city">
+                    <button class="header-mob__btn">
+                        <img src="./img/bx-map 1.png" alt="pin">
+                        <span>Воронеж</span>
+                    </button>
+                </div>
+
+                <div class="header-mob__store">
+                    <button class="header-mob__btn">
+                        <img src="./img/Frame.png" alt="img">
+                        <span>ул. Текстильщиков, 2и</span>
+                        <img src="./img/down.svg" alt="down">
+                    </button>
+                </div>
+
+                <div class="header-mob__btns">
+                    <div class="header-mob-btns__item catalog-btn">
+                        <button>
+                            <span>Каталог</span>
+                            <img src="./img/catalog-list.svg" alt="catalog">
+                        </button>
+                    </div>
+
+                    <button class="header-mob__btn city">
+                        <img src="./img/bx-map 1.png" alt="pin">
+                        <span>Воронеж</span>
+                    </button>
+
+                    <div class="header-mob-btns__item">
+                        <button>
+                            <span>Меню</span>
+                            <img src="./img/menu.svg" alt="menu">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search-mob">
+        <div class="main-container">
+            <div class="search-mob__wrapper">
+                <div class="search-mob__input">
+                    <div class="search-block">
+                        <input placeholder="Введите наименование, артикул, серию" class="search-input" type="text">
+                        <button class="search-btn" src="" alt=""><img src="./img/search.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="search-mob__btns">
+                    <div class="search-mob-btns__item">
+                        <button>
+                            <img src="./img/bx-bar-chart-alt-2 1.png" alt="bx-bar">
+                        </button>
+                    </div>
+                    <div class="search-mob-btns__item">
+                        <button>
+                            <img src="./img/list.png" alt="list">
+                        </button>
+                    </div>
+                    <div class="search-mob-btns__item">
+                        <button class="cart">
+                            <img src="./img/bascet.png" alt="basket">
+                            <span class="cart-value">1000 &#x20bd;</span>
+                            <span class="cart-count">10</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="site">
         <div class="header">
             <div class="nav-box">
@@ -150,11 +226,11 @@
                     <h4>Статус аккаунта</h4>
                     <div class="status">Базовый</div>
                 </div>
-                <h5>Чтобы получить статус "Профи", ваш ежеквартальный оборот должен быть выше 9 999 ₱.</h5>
+                <h5>Чтобы получить статус "Профи", ваш ежеквартальный оборот должен быть выше <b>b</b>9 999 ₱.</h5>
                 <div class="box-loading-bar">
                     <h4><b>60 325 ₱</b></h4>
                     <div class=" loading-bar">
-                        <div class="progress" style="width:449px"></div>
+                        <div class="progress" style="width: 66%"></div>
                     </div>
                     <div class="box-summ-min-max">
                         <h5><b>0 ₱</h5>
@@ -252,76 +328,91 @@
         </div>
     </div>
     <div class="footer">
-        <div class="box-footer">
-            <div class="box-footer-info">
-                <div class="box-footer-info-item">
-                    <img src="./img/logo-company.png" alt="">
-                    <a href="">+7 (473) 246-00-00</a>
-                    <a href="">8 800 555-88-59</a>
-                    <a href="">eshop@avselectro.ru</a>
-                </div>
-                <div class="box-footer-info-item">
-                    <h4>О компании</h4>
-                    <a href="">О нас</a>
-                    <a href="">Новости и события</a>
-                    <a href="">Вакансии "АВС-электро"</a>
-                    <a href="">Сертификаты</a>
-                    <a href="">Контакты</a>
-                </div>
-                <div class="box-footer-info-item">
-                    <h4>Покупателям</h4>
-                    <a href="">Акции</a>
-                    <a href="">Доставка и оплата</a>
-                    <a href="">Гарантия и возврат</a>
-                    <a href="">Статьи и советы</a>
-                    <a href="">Программа лояльности</a>
-                    <a href="">Магазины и пункты выдачи</a>
-                    <a href="">F.A.Q.</a>
-                    <a href="">Golden Club</a>
-                </div>
-                <div class="box-footer-info-item">
-                    <h4>Услуги</h4>
-                    <a href="">Предприятиям</a>
-                    <a href="">Производителям электрощитов</a>
-                    <a href="">Монтажникам</a>
-                    <a href="">Франшиза</a>
-                </div>
-                <div class="box-footer-info-item-i">
-                    <h4>Мы объединяем профессионал</h4>
-                    <p>Все лучшие предложения для наших подписчиков!</p>
-                    <div class="box-subscribe-form">
-                        <input class="input-subscribe" type="text">
-                        <button class="button-subscribe">Подписаться</button>
+        <div class="main-container">
+            <div class="box-footer">
+                <div class="box-footer-info">
+                    <div class="box-footer-info-item logo">
+                        <img src="./img/logo-company.png" alt="">
+                        <a href="">+7 (473) 246-00-00</a>
+                        <a href="">8 800 555-88-59</a>
+                        <a href="">eshop@avselectro.ru</a>
                     </div>
-                    <p class="p-subscribe">Нажимая кнопку “Подписаться”, я соглашаюсь с условиями <a>политики
-                            конфиденциальности</a> и
-                        пользовательского соглашения.</p>
+                    <div class="box-footer-info-item">
+                        <h4>О компании</h4>
+                        <a href="">О нас</a>
+                        <a href="">Новости и события</a>
+                        <a href="">Вакансии "АВС-электро"</a>
+                        <a href="">Сертификаты</a>
+                        <a href="">Контакты</a>
+                    </div>
+                    <div class="box-footer-info-item">
+                        <h4>Покупателям</h4>
+                        <a href="">Акции</a>
+                        <a href="">Доставка и оплата</a>
+                        <a href="">Гарантия и возврат</a>
+                        <a href="">Статьи и советы</a>
+                        <a href="">Программа лояльности</a>
+                        <a href="">Магазины и пункты выдачи</a>
+                        <a href="">F.A.Q.</a>
+                        <a href="">Golden Club</a>
+                    </div>
+                    <div class="box-footer-info-item">
+                        <h4>Услуги</h4>
+                        <a href="">Предприятиям</a>
+                        <a href="">Производителям электрощитов</a>
+                        <a href="">Монтажникам</a>
+                        <a href="">Франшиза</a>
+                    </div>
+                    <div class="box-footer-info-item-i">
+                        <h4>Мы объединяем профессионал</h4>
+                        <p>Все лучшие предложения для наших подписчиков!</p>
+                        <div class="box-subscribe-form">
+                            <input class="input-subscribe" type="text">
+                            <button class="button-subscribe">Подписаться</button>
+                        </div>
+                        <p class="p-subscribe">Нажимая кнопку “Подписаться”, я соглашаюсь с условиями <a>политики
+                                конфиденциальности</a> и
+                            пользовательского соглашения.</p>
+                    </div>
+                </div>
+                <div class="box-social-networks">
+                    <div class="social-networks-items">
+                        <a href=""><img src="./img/social-network/vk.png" alt=""></a>
+                        <a href=""><img src="./img/social-network/fb.png" alt=""></a>
+                        <a href=""><img src="./img/social-network/ok.png" alt=""></a>
+                        <a href=""><img src="./img/social-network/yt.png" alt=""></a>
+                        <a href=""><img src="./img/social-network/insta.png" alt=""></a>
+                    </div>
+                    <div class="social-company-items">
+                        <a href=""><img src="./img/img-company/company1.png" alt=""></a>
+                        <a href=""><img src="./img/img-company/company2.png" alt=""></a>
+                        <a href=""><img src="./img/img-company/company3.png" alt=""></a>
+                        <a href=""><img src="./img/img-company/company4.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="box-copyright">
+                    <h3>2007-2019 © Компания АВС-электро. Информация на сайте не является публичной офертой.</h3>
+                    <a href="">Политика конфиденциальности</a>
+                    <div class='box-bank'>
+                        <a href=""><img src="./img/visa.png" alt=""></a>
+                        <a href=""><img src="./img/mastercard.png" alt=""></a>
+                        <a href=""><img src="./img/maestro.png" alt=""></a>
+                        <a href=""><img src="./img/sber.png" alt=""></a>
+                    </div>
+                    <div class="social-networks-items">
+                        <a href=""><img src="./img/social-network/vk.png" alt=""></a>
+                        <a href=""><img src="./img/social-network/fb.png" alt=""></a>
+                        <a href=""><img src="./img/social-network/ok.png" alt=""></a>
+                        <a href=""><img src="./img/social-network/yt.png" alt=""></a>
+                        <a href=""><img src="./img/social-network/insta.png" alt=""></a>
+                    </div>
                 </div>
             </div>
-            <div class="box-social-networks">
-                <div class="social-networks-items">
-                    <a href=""><img src="./img/social-network/vk.png" alt=""></a>
-                    <a href=""><img src="./img/social-network/fb.png" alt=""></a>
-                    <a href=""><img src="./img/social-network/ok.png" alt=""></a>
-                    <a href=""><img src="./img/social-network/yt.png" alt=""></a>
-                    <a href=""><img src="./img/social-network/insta.png" alt=""></a>
-                </div>
-                <div class="social-company-items">
-                    <a href=""><img src="./img/img-company/company1.png" alt=""></a>
-                    <a href=""><img src="./img/img-company/company2.png" alt=""></a>
-                    <a href=""><img src="./img/img-company/company3.png" alt=""></a>
-                    <a href=""><img src="./img/img-company/company4.png" alt=""></a>
-                </div>
-            </div>
-            <div class="box-copyright">
-                <h3>2007-2019 © Компания АВС-электро. Информация на сайте не является публичной офертой.</h3>
-                <a href="">Политика конфиденциальности</a>
-                <div class='box-bank'>
-                    <a href=""><img src="./img/visa.png" alt=""></a>
-                    <a href=""><img src="./img/mastercard.png" alt=""></a>
-                    <a href=""><img src="./img/maestro.png" alt=""></a>
-                    <a href=""><img src="./img/sber.png" alt=""></a>
-                </div>
+            <div class="social-company-items tablet">
+                <a href=""><img src="./img/img-company/company1.png" alt=""></a>
+                <a href=""><img src="./img/img-company/company2.png" alt=""></a>
+                <a href=""><img src="./img/img-company/company3.png" alt=""></a>
+                <a href=""><img src="./img/img-company/company4.png" alt=""></a>
             </div>
         </div>
     </div>

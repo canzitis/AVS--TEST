@@ -44,8 +44,6 @@ saveButtonValidate[0].addEventListener('click', function () {
         }
 
     }
-
-
 });
 
 

@@ -12,6 +12,10 @@ body{
     margin: 0 auto;
 }
 
+.container{
+    height: 50px;
+}
+
 .body-content {
     display: grid;
     grid-template-columns: 328px 1fr;
@@ -23,7 +27,7 @@ body{
     margin: 0 auto;
 
     padding-top:24px;
-    /* display: grid; */
+
     grid-template-areas: 'header header'
     'sidebar content'
     'footer footer';
@@ -32,20 +36,23 @@ body{
 }
 
 .header{
-    /* width: 1387px; */
     height: 200px;
 }
 
 .header a:hover {
- cursor: pointer;
+    cursor: pointer;
 }
 
 .nav-box{
-    height: 36px;
-
     display: flex;
     flex-direction:row;
     justify-content: space-between;
+}
+
+.box-1:hover,.box-2:hover,.box-3:hover,.box-4:hover,.box-5:hover{
+    height: 20px;
+    background-color: #E8EAED;
+    transition: background-color 1s 
 }
 
 .nav-box-1{
@@ -67,8 +74,7 @@ body{
     flex-direction: row;
     align-items: center;
     padding: 8px 16px;
-
-    width: 124px;
+    
     height: 36px;
 
     background: #FFFFFF;
@@ -101,7 +107,6 @@ body{
     align-items: center;
     padding: 8px 16px;
 
-    width: 249px;
     height: 36px;
 
     background: #FFFFFF;
@@ -160,13 +165,11 @@ body{
 }
 
 .box-3 img{
-    
     width: 20px;
     height: 20px;
 }
 
 .box-3 a{
-   
     width: 132px;
     height: 20px;
 
@@ -183,8 +186,6 @@ body{
     align-items: center;
     padding: 8px 16px;
 
-
-
     background: #FFFFFF;
     border-radius: 4px;
 }
@@ -196,7 +197,6 @@ body{
 }
 
 .box-4 a{
-
     width: 46px;
     height: 20px;
 
@@ -214,20 +214,16 @@ body{
     align-items: center;
     padding: 8px 16px;
 
-
-
     background: #FFFFFF;
     border-radius: 4px;
 }
 
 .box-5 img{
-
     width: 20px;
     height: 20px;
 }
 
 .box-5 a{
-
     width: 168px;
     height: 20px;
     
@@ -236,7 +232,6 @@ body{
     line-height: 20px;
     
     color: #2B2A29;
-    
 }
 
 .nav-box-3{
@@ -265,7 +260,6 @@ body{
 }
 
 .nav-box-3 a{
-
     width: 121px;
     height: 20px;
     left: 44px;
@@ -284,8 +278,6 @@ body{
 }
 
 .box-grid{
-    /* width: 1400px; */
-
     margin-top: 32px;
     
     display: grid;
@@ -307,8 +299,28 @@ body{
     height: 100px;
 }
 
-.catalog-img img{
-    height: 45px;
+.catalog-button{
+    display: flex;
+    height: 42px;
+    background: #E31E24;
+    border-radius: 4px;
+    align-items: center;
+    padding: 12px 20px;
+    border:none;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.catalog-button:hover{
+    cursor: pointer;
+    background-color: #c0191f;;
+    transition: all 1s;
+}
+
+.catalog-button img{
+    margin-right: 8px;
 }
 
 .search-input{
@@ -375,7 +387,6 @@ body{
     position: absolute;
     right: 0;
 
-    
     background-color: red;
  
     color: white;
@@ -385,8 +396,6 @@ body{
  .count h5{
     margin: 2px;
  }
-
- 
 
  .box-connection{
     width: 1297px;
@@ -418,12 +427,12 @@ body{
  }
 
  .connection-item,.connection-item-i{
-     display: flex;
-     justify-content: center;
+    display: flex;
+    justify-content: center;
  }
 
  .connection-item img,  .connection-item a, .connection-item-i img, a{
-     margin-right: 5px;
+    margin-right: 5px;
  }
 
  .item-city{
@@ -442,11 +451,6 @@ body{
     line-height: 20px;
     margin-left: 5px;
  }
- 
-.sidebar{
-    /* margin-top: 40px; */
-}
-
 
  .box-personal-account-text h4{
     margin: 0;
@@ -455,8 +459,6 @@ body{
     font-weight: bold;
     font-size: 24px;
  }
-
-
 
  .item-personal-account-text{
     display: flex;
@@ -482,11 +484,9 @@ body{
 }
 
  .box-nav-panel{
-    /* width: 328px; */
     height: 36px;
     display: flex;
     flex-direction: column;
-    /* margin-top: 20px; */
  }
 
  .box-nav-panel a{
@@ -498,7 +498,6 @@ body{
     height: 100px;
     padding: 10px;
     display: flex;
-  
  }
 
  .actic-link-personal-account{
@@ -536,11 +535,6 @@ body{
     color: white;
  }
 
-
- .content{
-    /* margin-top: 120px; */
-}
-
 .box-status-account h4{
     margin: 0;
     font-weight: bold;
@@ -549,7 +543,6 @@ body{
 }
 
 .status-box{
-    /* width: 500px; */
     height: 30px;
     display: flex;
 }
@@ -574,13 +567,11 @@ body{
 }
 
 .loading-bar{
-    /* width:688px; */
     overflow:hidden;
     height:16px;
     background: #E8EAED;
     border-radius: 4px;
 }
-
 
 .progress{
     height:16px;
@@ -597,7 +588,6 @@ body{
 }
 
 .box-summ-min-max{
-    
     display: flex;
     justify-content: space-between;
 }
@@ -629,22 +619,18 @@ body{
 
 .personal-data{
     display: grid;
-    /* grid-template-areas: 'input input'
-    'input input'
-    'input input'; */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 32px;
-    /* grid-template-columns: 328px; */
 }
 
 .personal-data input{
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
+    padding-left: 20px;
 }
 
 .personal-data-input{
-    /* width: 330px; */
     width: 100%;
     height: 50px;
     padding: 15px;
@@ -669,8 +655,6 @@ body{
     margin-left: 20px;
     color: red;
 }
-
-
 
 .personal-data-button{
     display: flex;
@@ -703,13 +687,20 @@ body{
     border:none;
 }
 
-.save-button:hover, .reset-button:hover{
-    cursor: pointer;
+.save-button:hover{
+    cursor: pointer; 
+    background-color: #c0191f;
+    transition: all 1s;
+}
+
+.reset-button:hover{
+    cursor: pointer; 
+    background-color: #c8c9ca;
+    transition: all 1s;
 }
 
 .box-account-business{
     margin-top: 48px;
-    text-align: center;
     background: #F2F4F7;
     border-radius: 4px;
     padding: 24px;
@@ -720,7 +711,6 @@ body{
     flex-direction: row;
     align-items: center;
 
-    /* width: 300px; */
     height: 32px;
 }
 
@@ -740,7 +730,6 @@ body{
 
 
 .box-account-business p{
-    /* width: 640px; */
     height: 40px;
     margin: 18px 0 24px 0;
 
@@ -752,10 +741,7 @@ body{
 }
 
 .added-company-button{
-    /* width: 188px;
-    height: 48px; */
     padding: 14px 20px;
-    margin-top: 40px;
     background: #F2042C;
     border-radius: 4px;
     border:none;
@@ -767,7 +753,9 @@ body{
 }
 
 .added-company-button:hover{
-    cursor: pointer;
+    cursor: pointer; 
+    background-color: #c0191f;
+    transition: all 1s;
 }
 
 .box-pass-date{
@@ -782,12 +770,12 @@ body{
 }
 
 .pass-date-input{
-    /* display: flex;
-   
-    justify-content: space-between; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 32px;
+}
+.pass-date-input input{
+   padding-left: 20px;
 }
 
 
@@ -810,6 +798,12 @@ body{
     color: white;
 }
 
+.button-save-pass:hover{
+    cursor: pointer; 
+    background-color: #c0191f;
+    transition: all 1s;
+}
+
 .button-reset-pass{
     width: 117px;
     height: 50px;
@@ -819,6 +813,12 @@ body{
     font-weight: 600;
     font-size: 14px;
     color: black
+}
+
+.button-reset-pass:hover{
+    cursor: pointer; 
+    background-color:  #c8c9ca;
+    transition: all 1s;
 }
 
 
@@ -880,8 +880,6 @@ body{
     color:red
 }
   
-
-
 .box-footer-info h4{
     font-weight: bold;
     font-size: 18px;
@@ -957,7 +955,9 @@ body{
 }
 
 .button-subscribe:hover{
-    cursor: pointer;
+    cursor: pointer; 
+    background-color: #c0191f;
+    transition: all 1s;
 }
 
 .box-social-networks{   
@@ -1076,12 +1076,6 @@ body{
     margin-left: 8px;
 }
 
-/* .header-mob__btn:before {
-    opacity: 1;
-    background: red;
-    content: '';
-}
-*/
 .header-mob__btn:hover {
     transition: .2s;
     opacity: .9;
@@ -1210,6 +1204,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 45px;
 }
 
 .footer-mob__copyright {
@@ -1217,6 +1212,20 @@ body{
     flex-direction: column;
     align-items: center;
     margin-top: 32px;
+}
+
+.footer-mob__copyright a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+
+    font-weight: 600;
+    font-size: 13px;
+
+    text-decoration-line: underline;
+
+    color: #2B2A29;
 }
 
 .footer-mob__copyright > div {
@@ -1325,6 +1334,10 @@ body{
     display: none;
     }
 
+    .box-bank{
+        display: flex;
+    }
+    
     .header-box-2{
         width: 920px;
     }
@@ -1356,37 +1369,37 @@ body{
     }
 
       .site {
-          display: block;
-          max-width: 736px;
+        display: block;
+        max-width: 736px;
       }
       
       .main-container {
-          max-width: 736px;
+        max-width: 736px;
       }
 
       .header {
-          display: none;
+        display: none;
       }
 
       .sidebar {
-          display: none;
+        display: none;
       }
 
       .header-mob {
-          display: block;
+        display: block;
       }
 
       .search-mob {
-          display: block;
+        display: block;
       }
 
       /* footer */
       .box-footer-info-item:not(.logo), .box-footer-info-item-i {
-          display: none;
+        display: none;
       }
 
       .box-social-networks {
-          display: none;
+        display: none;
       }
 
       .box-copyright {
@@ -1397,31 +1410,32 @@ body{
       }
 
       .box-footer {
-          display: flex;
+        display: flex;
       }
 
       .social-company-items.tablet {
-          display: flex;
+        display: flex;
+        padding-bottom: 48px;
       }
 
       .box-copyright > h3 {
-          order: 0;
+        order: 0;
       }
 
       .box-copyright > a {
-          order: 2;
-          margin-top: -92px;
+        order: 2;
+        margin-top: -92px;
       }
 
       .box-copyright > .box-bank {
-          order: 1;
-          justify-self: end;
+        order: 1;
+        justify-self: end;
       }
 
       .box-copyright > .social-networks-items {
-          order: 3;
-          justify-self: end;
-          margin-top: -108px;
+        order: 3;
+        justify-self: end;
+        margin-top: -108px;
       }
 
       .box-copyright > .social-networks-items {
@@ -1431,28 +1445,36 @@ body{
 
   @media (max-width: 767px) {
       .site {
-          max-width: 343px;
+        max-width: 343px;
       }
       
       .main-container {
-          max-width: 343px;
+        max-width: 343px;
       }
 
       .header-mob {
-          padding: 10px 0;
+        padding: 10px 0;
       }
 
       .header-mob__store, .header-mob__city {
-          display: none;
+        display: none;
       }
 
       .header-mob-btns__item.catalog-btn {
-          display: none;
+        display: none;
       }
 
       .header-mob-btns__item > button {
         padding: 8px;
         background: #404040;
+    }
+
+    .box-account-business{
+        text-align: center;
+    }
+
+    .added-company-button{
+        margin-top: 30px;
     }
 
     .header-mob__btns > .header-mob__btn.city {

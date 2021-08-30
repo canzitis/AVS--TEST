@@ -534,7 +534,7 @@ body{
  .bell-count{
     padding: 3px 7px;
 
-    margin-left: 8px;
+    margin-left: 5px;
 
     border-radius: 50%;
     background-color: red;
@@ -588,6 +588,12 @@ body{
 
     color: #2B2A29;
 }
+
+.box-loading-bar b{
+    
+}
+
+
 
 .loading-bar{
     overflow:hidden;
@@ -886,6 +892,8 @@ body{
 }
 
 .box-footer-info-item img{
+    width: 86px;
+    height: 100px;
     margin-bottom: 15px;
 }
 
@@ -1111,11 +1119,18 @@ body{
   
 .material-textfield {
     position: relative;  
-  }
+}
+
+.important-label{
+    color: red;
+}
+
   
-  .material-textfield input {
+.material-textfield input {
     height: 50px;
-  }
+}
+
+
 
 .header-mob__btn > span {
     margin-left: 8px;

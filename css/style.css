@@ -394,20 +394,19 @@ body{
  .count{
     padding: 3px 4px 5px 4px;
     position: absolute;
-    right: 4px;
+    right: 8px;
     border-radius: 50%;
     background-color: red;
-
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 12px;
     bottom: 45px;
-
-    color: #FFFFFF;
+ 
  }
 
  .count h5{
-    margin: 2px;
+     margin: 0;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF;
  }
 
  .box-connection{

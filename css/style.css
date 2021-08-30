@@ -392,15 +392,18 @@ body{
  } 
  
  .count{
-    height:20px;
-    width: 20px;
+    padding: 3px 4px 5px 4px;
     position: absolute;
-    right: 0;
-
-    background-color: red;
- 
-    color: white;
+    right: 4px;
     border-radius: 50%;
+    background-color: red;
+
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    bottom: 45px;
+
+    color: #FFFFFF;
  }
 
  .count h5{
@@ -522,9 +525,6 @@ body{
  }
 
  .nav-panel-item a{
-    margin: 0;
-    font-family: Open Sans;
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -533,16 +533,21 @@ body{
  }
 
  .bell-count{
-    width: 20px;
-    height: 20px;
+    padding: 3px 7px;
 
-    font-weight: 900;
+    margin-left: 8px;
 
-    font-size: 12px;
-    text-align: center;
     border-radius: 50%;
     background-color: red;
     color: white;
+
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+
+    text-align: center;
+
+    color: #FFFFFF;
  }
 
 .box-status-account h4{
@@ -566,14 +571,23 @@ body{
     border-radius: 4px;
     text-align: center;
     background-color: blue;
-    color: white;
 
     font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
 }
 
 .box-loading-bar h4{
     padding-left: 66%;
     margin-bottom: 10px;
+    margin-top: 45px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #2B2A29;
 }
 
 .loading-bar{
@@ -1516,3 +1530,47 @@ body{
         display: flex;
     }
   }
+
+  @media(max-width:350px){
+      .header-mobile{
+        max-width: 250px;
+      }
+      .site{
+          max-width: 250px;
+      }
+
+      .main-container{
+        max-width: 250px;
+      }
+
+      .personal-data {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 32px;
+      }
+
+      .pass-date-input {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 32px;
+      }
+
+      .box-account-business{
+      padding: 15px;    
+      }
+
+      .account-business-title h4{
+        font-size: 17px;
+      }
+      .added-company-button{
+          margin-top: 70px;
+      }
+
+      .item-personal-account-text a{
+          font-size: 10px;
+      }
+
+      .status-box{
+          margin-bottom: 40px;
+      }
+  }     

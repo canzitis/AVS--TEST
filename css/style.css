@@ -969,6 +969,11 @@ body{
     margin: 3px;
 }
 
+.social-networks-items img:hover{
+    opacity: 0.50;
+    transition: all 1.2s;
+}
+
 .social-company-items{
     display: flex;
     justify-content: space-between;
